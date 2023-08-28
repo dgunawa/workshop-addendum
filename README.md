@@ -33,15 +33,10 @@ Please run the following commands in your c9 ide when instructed to update the w
     find . -type f -name "locals.tf" -print0 | xargs -0 sed -i'' -e 's/\(karpenterInstanceProfile = module.karpenter.instance_profile_name\)/#\1/g'
 
 
-## Now we're going to jump straight to deploying EKS.  
- 1. Follow the instructions for the "[Optional] - Skip Manual Cluster Provisioning" section
- 2. **Don't bother with any of the sections that come before**
- 3. Since our time together is limited, please use our GitHub account name `FedCivLearningDays-SimplifyEKS` in place of your own
- 4. **Come back here once you finish that page**
-
-  https://catalog.workshops.aws/eks-blueprints-terraform/en-US/040-optional-skip-cluster-setup 
-
-**DON'T FORGET! come back here when you're done!**
+## Deploying EKS
+ 1. Follow the instructions for the "[Optional] - Skip Manual Cluster Provisioning" section https://catalog.workshops.aws/eks-blueprints-terraform/en-US/040-optional-skip-cluster-setup 
+ 2. Since our time together is limited, please use our GitHub account name `FedCivLearningDays-SimplifyEKS` in place of your own
+ 3. Come back here once you finish that page
 
 ### Run this after Terraform apply for VPC and Cluster
     aws eks --region $AWS_REGION update-kubeconfig --name eks-blueprint-blue
