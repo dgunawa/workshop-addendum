@@ -10,7 +10,7 @@ One-time login link: TBD
 Please run the following commands in your c9 ide when instructed to update the workshop content to match today's abridged agenda.
 
 
-    cd ~/evnironment
+    cd ~/environment
     #install the c9 cli tool
     npm install -g c9
     
@@ -42,7 +42,7 @@ Please run the following commands in your c9 ide when instructed to update the w
     aws eks --region $AWS_REGION update-kubeconfig --name eks-blueprint-blue
 
 ## Deploy a simple workload 
- 1. Deploy a simple workload with the instructions at https://catalog.workshops.aws/eks-blueprints-terraform/en-US/050-dev-team-deploy-workload/1-add-app-to-workloads-repo
+ 1. Deploy a simple workload with the instructions at https://catalog.workshops.aws/eks-blueprints-terraform/en-US/050-dev-team-deploy-workload/1-add-app-to-workloads-repo .  We skipped the steps showing how to access your ArgoCD server so use the below commands for access.
 
 Get the url for your ArgoCD server
 
