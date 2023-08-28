@@ -28,9 +28,8 @@ Please run the following commands in your c9 ide when instructed to update the w
     #Switch to a forked version of kubernetes-addons to sidestep some issues with workshop content designed for a version of Terraform that is no longer available
     find . -type f -name "main.tf" -print0 | xargs -0 sed -i'' -e 's/github\.com\/aws\-ia\/terraform\-aws\-eks\-blueprints?ref\=v4\.32\.0\/modules\/kubernetes\-addons/github.com\/naredhim\/terraform-aws-eks-blueprints?ref=v5.0.1\/modules\/kubernetes-addons/g'
 
-    #Comment out a few things in our Terraform code that we'll re-enable later in the workshop
+    #Comment out a workload that we'll re-enable later in the workshop
     find . -type f -name "main.tf" -print0 | xargs -0 sed -i'' -e 's/\(workloads = local.workload_application\)/#\1/g'
-    find . -type f -name "locals.tf" -print0 | xargs -0 sed -i'' -e 's/\(karpenterInstanceProfile = module.karpenter.instance_profile_name\)/#\1/g'
 
 
 ## Deploying EKS
