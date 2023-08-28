@@ -9,7 +9,7 @@
 | (extra credit) EKS Observability | David Henry|
 
 
-## PRE STEPS
+## Let's get started!
 ### Get access to your temporary environment
 One-time login link: TBD
 
