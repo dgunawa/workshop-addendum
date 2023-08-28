@@ -41,7 +41,7 @@ Please run the following commands in your c9 ide when instructed to update the w
 **DON'T FORGET! come back here when you're done!**
 
 ### Run this after Terraform apply for VPC and Cluster
-    aws eks —region $AWS_REGION update-kubeconfig —name eks-blueprint-blue
+    aws eks --region $AWS_REGION update-kubeconfig --name eks-blueprint-blue
 
 ## Deploy a simple workload 
  1. Deploy a simple workload with the instructions at https://catalog.workshops.aws/eks-blueprints-terraform/en-US/030-provision-eks-cluster
