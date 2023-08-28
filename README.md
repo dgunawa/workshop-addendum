@@ -8,6 +8,8 @@ One-time login link: TBD
 
 ### Run these commands in your Cloud9 terminal
 Please run the following commands in your c9 ide when instructed to update the workshop content to match today's abridged agenda.
+
+
     cd ~/evnironment
     #Make sure we're using the 2.x version of the AWS cli  
     rm ~/.local/bin/aws
