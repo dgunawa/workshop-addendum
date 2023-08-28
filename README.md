@@ -48,7 +48,7 @@ Get the url for your ArgoCD server
     ARGOCD_SERVER=$(kubectl get svc argo-cd-argocd-server -n argocd -o json | jq --raw-output '.status.loadBalancer.ingress[0].hostname')
     echo "ArgoCD URL: http://$ARGOCD_SERVER"
     
-Get the admin password for your ArgoCD server
+Get the admin password for your ArgoCD server (username is 'admin')
 
     ARGOCD_PWD=$(aws secretsmanager get-secret-value --secret-id argocd-admin-secret.eks-blueprint | jq -r '.SecretString')
     echo export ARGOCD_PWD=\"$ARGOCD_PWD\" >> ~/.bashrc
