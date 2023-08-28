@@ -11,6 +11,9 @@ Please run the following commands in your c9 ide when instructed to update the w
 
 
     cd ~/evnironment
+    #install the c9 cli tool
+    npm install -g c9
+    
     #Make sure we're using the 2.x version of the AWS cli  
     rm ~/.local/bin/aws
     bash
