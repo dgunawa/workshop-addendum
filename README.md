@@ -58,3 +58,14 @@ Get the admin password for your ArgoCD server
     echo "ArgoCD admin password: $ARGOCD_PWD"
 
 
+## Autoscaling with Karpenter
+
+Follow the instructions in the section on Autoscaling with Karpenter
+
+https://catalog.workshops.aws/eks-blueprints-terraform/en-US/061-autoscaling-karpenter
+
+## (Extra Credit) EKS Observability
+
+Follow the instructions in this blog on Amazon EKS Observability Accelerator
+
+https://aws.amazon.com/blogs/mt/introducing-amazon-eks-observability-accelerator/
