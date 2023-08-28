@@ -25,8 +25,11 @@ These commands should produce an output of "IAM role valid".  Let your presenter
     find . -type f -name "locals.tf" -print0 | xargs -0 sed -i'' -e 's/\(karpenterInstanceProfile = module.karpenter.instance_profile_name\)/#\1/g'
 
 
-## Now we're going to jump straight to deploying EKS.  Follow the instructions found under "[Optional] - Skip Manual Cluster Provisioning" instead of the sections that come before.  Come back here once you finish that page.
-https://catalog.workshops.aws/eks-blueprints-terraform/en-US/040-optional-skip-cluster-setup
+## Now we're going to jump straight to deploying EKS.  
+ 1. Follow the instructions for the "[Optional] - Skip Manual Cluster Provisioning" section **ONLY**.  Don't bother with any of the sections that come before.
+ 2. Since our time together is limited, please use our GitHub account name `FedCivLearningDays-SimplifyEKS` in place of your own.
+ 3. Come back here once you finish that page.
+Right click, open in new tab  https://catalog.workshops.aws/eks-blueprints-terraform/en-US/040-optional-skip-cluster-setup **and come back here when you're done**
 
 ### Run this after Terraform apply for VPC and Cluster
     aws eks —region $AWS_REGION update-kubeconfig —name eks-blueprint-blue
