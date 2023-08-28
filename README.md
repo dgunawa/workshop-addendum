@@ -28,10 +28,10 @@ These commands should produce an output of "IAM role valid".  Let your presenter
 ## Now we're going to jump straight to deploying EKS.  Follow the instructions found under "[Optional] - Skip Manual Cluster Provisioning" instead of the sections that come before.  Come back here once you finish that page.
 https://catalog.workshops.aws/eks-blueprints-terraform/en-US/040-optional-skip-cluster-setup
 
-### After Terraform apply for VPC and Cluster:
-    aws eks —region <region> update-kubeconfig —name eks-blueprint-blue
+### Run this after Terraform apply for VPC and Cluster
+    aws eks —region $AWS_REGION update-kubeconfig —name eks-blueprint-blue
 
-## Now we're going to deploy a simple workload with the instructions found in that section.
+## Now we're going to deploy a simple workload with the instructions found in that section
 https://catalog.workshops.aws/eks-blueprints-terraform/en-US/030-provision-eks-cluster
 
 ### Get the url for your ArgoCD server
@@ -39,7 +39,7 @@ https://catalog.workshops.aws/eks-blueprints-terraform/en-US/030-provision-eks-c
     echo "ArgoCD URL: http://$ARGOCD_SERVER"
 
 ### Get the admin password for your ArgoCD server
-   ARGOCD_PWD=$(aws secretsmanager get-secret-value --secret-id argocd-admin-secret.eks-blueprint | jq -r '.SecretString')
-   echo export ARGOCD_PWD=\"$ARGOCD_PWD\" >> ~/.bashrc
-   echo "ArgoCD admin password: $ARGOCD_PWD"
+    ARGOCD_PWD=$(aws secretsmanager get-secret-value --secret-id argocd-admin-secret.eks-blueprint | jq -r '.SecretString')
+    echo export ARGOCD_PWD=\"$ARGOCD_PWD\" >> ~/.bashrc
+    echo "ArgoCD admin password: $ARGOCD_PWD"
 
