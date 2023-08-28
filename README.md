@@ -44,7 +44,7 @@ Please run the following commands in your c9 ide when instructed to update the w
     aws eks --region $AWS_REGION update-kubeconfig --name eks-blueprint-blue
 
 ## Deploy a simple workload 
- 1. Deploy a simple workload with the instructions at https://catalog.workshops.aws/eks-blueprints-terraform/en-US/030-provision-eks-cluster
+ 1. Deploy a simple workload with the instructions at https://catalog.workshops.aws/eks-blueprints-terraform/en-US/050-dev-team-deploy-workload/1-add-app-to-workloads-repo
 
 Get the url for your ArgoCD server
 
