@@ -8,6 +8,9 @@
 ### Make sure we're using the 2.x version of the AWS cli
     rm ~/.local/bin/aws
     bash
+    aws --version
+This should produce an output like "aws-cli/2.13.13 Python/3.11.4 Linux/4.14.322-244.536.amzn2.x86_64 exe/x86_64.amzn.2 prompt/off".  Let your presenter know if you didn't get that.
+
 
 ### Make sure you've been given the correct IAM role
     aws cloud9 update-environment  --environment-id $C9_PID --managed-credentials-action DISABLE
