@@ -37,7 +37,10 @@ Please run the following commands in your c9 ide when instructed to update the w
 
     #Comment out a workload that we'll re-enable later in the workshop
     find . -type f -name "main.tf" -print0 | xargs -0 sed -i'' -e 's/\(workloads = local.workload_application\)/#\1/g'
+    find . -type f -name "locals.tf" -print0 | xargs -0 sed -i'' -e 's/\(karpenterInstanceProfile = module.karpenter.instance_profile_name\)/#\1/g'
 
+    #In the interest of time, use our GitHub account
+    export GITHUB_USER=FedCivLearningDays-SimplifyEKS
 
 ## Deploying EKS
  1. Follow the instructions for the "[Optional] - Skip Manual Cluster Provisioning" section https://catalog.workshops.aws/eks-blueprints-terraform/en-US/040-optional-skip-cluster-setup 
