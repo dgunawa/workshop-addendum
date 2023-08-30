@@ -11,7 +11,7 @@
 
 ## Let's get started!
 ### Get access to your temporary environment
-One-time login link: TBD
+Get your one time login link from your presenter.
 
 ### Run these commands in your Cloud9 terminal
 Please run the following commands in your c9 ide when instructed to update the workshop content to match today's abridged agenda.
