@@ -76,3 +76,8 @@ https://catalog.workshops.aws/eks-blueprints-terraform/en-US/061-autoscaling-kar
 Follow the instructions in this blog on Amazon EKS Observability Accelerator
 
 https://aws.amazon.com/blogs/mt/introducing-amazon-eks-observability-accelerator/
+
+
+## Please complete our survey!
+
+![Survey QR code](./POWERPNT_Axn7pbReQk.png)
