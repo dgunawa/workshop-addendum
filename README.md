@@ -1,12 +1,13 @@
 
-# Welcome to FedCiv Learning Days - Simplify EKS
-| Agenda   |     |
-| ----------- | ----------- |
-| Account access, begin EKS deployment      | David Henry       |
-| Provision EKS Cluster and Explain about the Workshop and addons |   Naresh Dhiman |
-| Deploy Simple Workload   | Dave Gunawan        |
-|Autoscaling with Karpenter | Naresh Dhiman |
-| (extra credit) EKS Observability | David Henry|
+# Welcome to EKS Immersion Day - DOT
+
+| Agenda   |
+| ----------- |
+| Account access, begin EKS deployment      |
+| Provision EKS Cluster and Explain about the Workshop and addons |
+| Deploy Simple Workload   |
+|Autoscaling with Karpenter |
+| (extra credit) EKS Observability |
 
 
 ## Let's get started!
