@@ -60,7 +60,12 @@ Please run the following commands in your c9 ide when instructed to update the w
     aws eks --region $AWS_REGION update-kubeconfig --name eks-blueprint-blue
 
 ## Deploy a simple workload 
- 1. Deploy a simple workload with the instructions at https://catalog.us-east-1.prod.workshops.aws/event/dashboard/en-US/workshop/050-dev-team-deploy-workload
+Deploy a simple workload with the instructions at
+
+https://catalog.us-east-1.prod.workshops.aws/event/dashboard/en-US/workshop/050-dev-team-deploy-workload
+
+### Quick Review of ECR
+(no hands on just demo)
 
 Get the url for your ArgoCD server
 
@@ -91,6 +96,7 @@ https://catalog.us-east-1.prod.workshops.aws/event/dashboard/en-US/workshop/061-
 
 ## Please complete our survey!
 
-<!---
-![Survey QR code](./POWERPNT_Axn7pbReQk.png)
--->
+https://amazonmr.au1.qualtrics.com/jfe/form/SV_1LDLz5FJtGnpvnw
+
+![Survey QR code](./Survey-QR.png)
+-
