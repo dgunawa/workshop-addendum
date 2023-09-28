@@ -16,8 +16,14 @@ Dave Gunawan - Solution Architect - djgunawa@amazon.om
 
 
 ## Let's get started!
-### Get access to your temporary environment
+
+### Open a github account
+https://github.com/
+
+### Get access to your AWS Workshop environment
 Get your one time login link from your presenter.
+
+https://catalog.us-east-1.prod.workshops.aws/join?access-code=be82-0fa9f4-64
 
 ### Run these commands in your Cloud9 terminal
 Please run the following commands in your c9 ide when instructed to update the workshop content to match today's abridged agenda.
