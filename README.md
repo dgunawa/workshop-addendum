@@ -31,12 +31,14 @@ Please run the following commands in your c9 ide when instructed to update the w
     rm ~/.local/bin/aws
     bash
     aws --version
+
     #This should produce an output like "aws-cli/2.13.13 Python/3.11.4 Linux/4.14.322-244.536.amzn2.x86_64 exe/x86_64.amzn.2 prompt/off".  Let your presenter know if you didn't get that.
 
 
     ###     Make sure you've been given the correct IAM role
     aws cloud9 update-environment  --environment-id $C9_PID --managed-credentials-action DISABLE
     aws sts get-caller-identity --query Arn | grep eks-blueprints-for-terraform-workshop-admin -q && echo "IAM role valid" || echo "IAM role NOT valid"
+
     #These commands should produce an output of "IAM role valid".  Let your presenter know if you get something else.
 
 
@@ -46,11 +48,12 @@ Please run the following commands in your c9 ide when instructed to update the w
 
     ###     Comment out a workload that we'll re-enable later in the workshop
     find . -type f -name "main.tf" -print0 | xargs -0 sed -i'' -e 's/\(workloads = local.workload_application\)/#\1/g'
-    find . -type f -name "local.tf" -print0 | xargs -0 sed -i'' -e 's/\(karpenterInstanceProfile = module.karpenter.instance_profile_name\)/#\1/g'
+    find . -type f -name "locals.tf" -print0 | xargs -0 sed -i'' -e 's/\(karpenterInstanceProfile = module.karpenter.instance_profile_name\)/#\1/g'
 
 
     ###     Increase the instance type of the initial worker node
     find . -type f -name "main.tf" -print0 | xargs -0 sed -i'' -e 's/m5\.large/m5\.2xlarge/g'
+
 
 ## Deploying EKS
  1. Follow the instructions for the "[Optional] - Skip Manual Cluster Provisioning" section https://catalog.workshops.aws/eks-blueprints-terraform/en-US/040-optional-skip-cluster-setup
