@@ -23,7 +23,7 @@ https://github.com/
 ### Get access to your AWS Workshop environment
 Get your one time login link from your presenter.
 
-https://catalog.us-east-1.prod.workshops.aws/join?access-code=be82-0fa9f4-64
+https://catalog.us-east-1.prod.workshops.aws/join?access-code=3f9f-07ed78-55
 
 ### Run these commands in your Cloud9 terminal
 Please run the following commands in your c9 ide when instructed to update the workshop content to match today's abridged agenda.
